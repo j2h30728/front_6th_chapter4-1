@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>쇼핑몰 - 홈</title><meta name="description" content="최고의 쇼핑몰에서 다양한 상품을 만나보세요" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#3b82f6",
+              secondary: "#6b7280",
+            },
+          },
+        },
+      };
+    </script>
+    <script type="module" crossorigin src="/front_6th_chapter4-1/react/assets/index-jDUTJdMo.js"></script>
+    <link rel="stylesheet" crossorigin href="/front_6th_chapter4-1/react/assets/index-DVL8oARQ.css">
+  <script>window.__INITIAL_DATA__ = {"type":"home","data":{"products":[],"categories":{"생활/건강":{"생활용품":{},"주방용품":{},"문구/사무용품":{},"자동차용품":{},"구강위생용품":{},"수납/정리용품":{},"욕실용품":{},"세탁용품":{},"공구":{},"청소용품":{},"정원/원예용품":{},"수집품":{},"관상어용품":{},"반려동물":{}},"디지털/가전":{"태블릿PC":{},"노트북":{}}},"totalCount":0,"filters":{"search":"","category1":"생활/건강","category2":"세제/세정제","sort":"price_asc","limit":20,"page":1}},"url":"/?category1=%EC%83%9D%ED%99%9C%2F%EA%B1%B4%EA%B0%95&category2=%EC%84%B8%EC%A0%9C%2F%EC%84%B8%EC%A0%95%EC%A0%9C","filters":{"search":"","category1":"생활/건강","category2":"세제/세정제","sort":"price_asc","limit":20,"page":1}};</script></head>
+  <body class="bg-gray-50">
+    <div id="root"><div class="bg-white"><div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8"><h1 class="text-xl font-bold text-gray-900 mb-4"><a href="/" data-link="/">쇼핑몰</a></h1><div class="mb-6"><input id="search-input" type="text" placeholder="상품 검색..." class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" value=""/></div><div class="mb-4 p-3 bg-blue-50 rounded-md"><h3 class="text-sm font-medium text-blue-900 mb-2">현재 필터:</h3><div class="flex flex-wrap gap-2 text-sm"><span class="px-2 py-1 bg-green-100 text-green-800 rounded">생활/건강</span><span class="px-2 py-1 bg-green-100 text-green-800 rounded">세제/세정제</span></div></div><div class="mb-4 flex justify-between items-center"><div class="flex space-x-4"><select id="limit-select" class="border border-gray-300 rounded px-2 py-1"><option value="10">10개씩</option><option value="20" selected="">20개씩</option><option value="50">50개씩</option></select><select id="sort-select" class="border border-gray-300 rounded px-2 py-1"><option value="price_asc" selected="">낮은 가격순</option><option value="price_desc">높은 가격순</option><option value="name_asc">이름순</option></select></div><button id="cart-icon-btn" class="relative p-2 text-gray-700 hover:text-gray-900"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4m0 0L7 13m0 0l-1.5 6h9M7 13l-1.5 6h9"></path></svg><span class="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">0</span></button></div><div class="mb-4"><h2 class="text-lg font-semibold text-gray-900">상품 목록</h2><p class="text-sm text-gray-600">총 <!-- -->0<!-- -->개 상품이 있습니다.</p></div><div class="grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8" data-testid="products-grid" id="products-grid"></div></div></div></div>
+  </body>
+</html>
